@@ -1,0 +1,40 @@
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center; 
+
+}
+h2 {
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+h3 {
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+table { 
+    display: block;
+    max-width: 550px;
+    height: 200px;
+    overflow: scroll;
+    position: center;
+    background-color: #ffffff;
+    opacity:0.4;
+}
+
+form {
+    opacity: 0.4;
+    width:1200px;
+}
+
+img {
+     opacity: 0.3;
+     filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+textarea {
+     width: 1200px;
+     height: 460px;
+}

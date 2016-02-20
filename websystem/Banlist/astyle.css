@@ -1,0 +1,21 @@
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center; 
+}
+
+form {
+    opacity: 0.4;
+    width:1200px;
+}
+
+img {
+     opacity: 0.4;
+     filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+textarea {
+     width: 1200px;
+     height: 600px;
+}

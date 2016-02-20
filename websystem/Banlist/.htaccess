@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Dark Age Gaming Banlist"
+AuthUserFile /darkage/pw/Banlist/.htpasswd
+Require valid-user
