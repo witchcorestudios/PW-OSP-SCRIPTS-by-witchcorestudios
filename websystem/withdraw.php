@@ -15,9 +15,9 @@ header_remove();
          
 $newbank = $balance - $withdraw;
 
-
+$config = parse_ini_file('db.ini');
      
-          $db_handle = mysqli_connect("localhost", "root", "pass", "scripts") or die("|-1");
+          $db_handle = mysqli_connect($config['server'],$config['username'],$config['password'],$config['dbname']);
       if($db_handle)
             			mysqli_query($db_handle, "UPDATE player_names SET bank = '$newbank', name = '$username' WHERE unique_id = '$unique_id'");
   mysqli_close($db_handle);

@@ -34,9 +34,9 @@ qstr_http://localhost/gol http://localhost/goldspawning.php?string={s42}
 qstr_http://localhost/get http://localhost/getbankwithdraw.php?guid={reg2}&playerid={reg0}&username={s56}
 qstr_http://localhost/getb http://localhost/getbankdeposit.php?guid={reg2}&playerid={reg0}&username={s56}
 qstr_http://localhost/dep http://localhost/deposit.php?guid={reg2}&username={s56}&deposit={reg4}&bank={reg7}
-qstr_[!]_Depositing_{reg4 [!]_Depositing_{reg4}_to_bank,_Balance_{reg7}_[_Banklimit_{reg6}_]_
+qstr_[!]_Depositing_{reg4 [!]_Depositing_{reg4}_to_bank,_Current_Balance_{reg76},_You_can_still_deposit_{reg59}_into_your_bank._
 qstr_http://localhost/wit http://localhost/withdraw.php?guid={reg2}&username={s56}&withdraw={reg4}&balance={reg5}
-qstr_[!]_Withdrawing_{reg [!]_Withdrawing_{reg4}_from_bank,_Balance_{reg5}_
+qstr_[!]_Withdrawing_{reg [!]_Withdrawing_{reg4}_from_bank,_Remaining_Balance_{reg53}_
 qstr_Greetings_{s6}!_Welc Greetings_{s6}!_Welcome_to_{s5},_Your_GUID_is_{reg2},_Your_Bank_contains_{reg4}!
 qstr_RECENT_NEWS__{s9}_ RECENT_NEWS_|_{s9}_
 qstr_[!]_You_have_no_gold [!]_You_have_no_gold_to_deposit_

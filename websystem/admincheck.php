@@ -15,14 +15,15 @@ header_remove();
 	 $local_id=$_GET["localid"];
 $username=$_GET["username"];
 
+$config = parse_ini_file('db.ini');
 
       
-      $db_handle = mysqli_connect("localhost", "root", "pass", "scripts") or die("|-1");
+      $db_handle = mysqli_connect($config['server'],$config['username'],$config['password'],$config['dbname']);
 	  if($db_handle) 
 	  
-	    $fetch = mysqli_query($db_handle, "SELECT adminlevel, pin FROM player_names WHERE unique_id = '$unique_id'");
+	    $fetch = mysqli_query($db_handle, "SELECT adminlevel, troop FROM player_names WHERE unique_id = '$unique_id'");
         $row = mysqli_fetch_assoc($fetch);
-		echo "33|$local_id|$unique_id|$row[adminlevel]|$row[pin]|";
+		echo "33|$local_id|$unique_id|$row[adminlevel]|$row[troop]|";
 
 		mysqli_close($db_handle);
 		

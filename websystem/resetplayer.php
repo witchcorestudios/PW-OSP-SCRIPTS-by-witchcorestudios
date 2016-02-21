@@ -11,7 +11,9 @@ header_remove();
       $unique_id=$_GET["uniqueid"];
          $username=$_GET["username"];
      
-          $db_handle = mysqli_connect("localhost", "root", "pass", "scripts") or die("|-1");
+	 $config = parse_ini_file('db.ini');
+	 
+          $db_handle = mysqli_connect($config['server'],$config['username'],$config['password'],$config['dbname']);
       if($db_handle)
             
 			mysqli_query($db_handle, "UPDATE player_names SET name = '$username', head = 0, body = 0, hands = 0, feet = 0, horse = 0, item1 = 0, item2 = 0, item3 = 0, item4 = 0, x = 0, y = 0, z = 0, health = 100, hunger = 0 WHERE unique_id = '$unique_id'");

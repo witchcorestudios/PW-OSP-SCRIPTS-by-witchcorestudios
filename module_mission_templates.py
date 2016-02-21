@@ -151,8 +151,6 @@ before_mission_start_setup = (ti_before_mission_start, 0, 0, [], # set up basic 
     (team_set_relation, team_spawn_invulnerable, team_spawn_invulnerable, 0),
     (call_script, "script_initialize_scene_globals"),
     (call_script, "script_scene_set_day_time"),
-		(assign, "$laborbonus", 25),
-	(assign, "$factionbonus", 250),
 	(assign, "$antimassbanticker1", 0),
 	(assign, "$antimassbanticker2", 0),
 	(assign, "$antimassbanticker3", 0),
@@ -165,6 +163,16 @@ before_mission_start_setup = (ti_before_mission_start, 0, 0, [], # set up basic 
 	(assign, "$antimassbanid5", 0),
 	(assign, "$factionbonusticker", 0),
 	(assign, "$playersonline", 0),
+	#enomey bonus, 1 = active, 0 = disabled
+	(assign, "$doctorbonus", 1),
+	(assign, "$serflaborbonus", 1),
+	#econemy bonus amount in gold, 250 = 250 gold
+	(assign, "$laborbonus", 25),
+	(assign, "$factionbonus", 250),
+	#end bonus toggles
+	#Health fix, 1 = combat troops will spawn with full health, 0 = combat troops will spawn with partial health
+	(assign, "$healthfix", 1),
+	#end health fix
 	(str_clear, s21),
 	(str_clear, s33),
     (call_script, "script_scene_setup_factions_castles"),

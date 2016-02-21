@@ -15,8 +15,9 @@ header_remove();
 	 $local_id=$_GET["playerid"];
 	 $username=$_GET["username"];
 
-      
-      $db_handle = mysqli_connect("localhost", "root", "pass", "scripts") or die("|-1");
+      $config = parse_ini_file('db.ini');
+	  
+      $db_handle = mysqli_connect($config['server'],$config['username'],$config['password'],$config['dbname']);
 	  if($db_handle) 
 	  
 	    $fetch = mysqli_query($db_handle, "SELECT bank  FROM player_names WHERE unique_id = '$unique_id'");

@@ -253,6 +253,7 @@ g_changing_game_type_allowed
 g_next_scene
 g_next_game_type
 g_name_server_enabled
+healthfix
 g_victory_condition_time
 g_spawn_marker_count
 g_spawned_bot_count
@@ -274,8 +275,10 @@ g_loop_animal_herd_leader
 g_loop_animal_herd_begin
 g_time_last_herd_animal_disappeared
 g_recent_nearby_deaths_factor
+serflaborbonus
 laborbonus
 g_edit_scene
+doctorbonus
 g_herd_animal_count
 g_weather_volatility
 g_current_precipitation_intensity
@@ -299,9 +302,9 @@ antimassbanticker4
 antimassbanid4
 antimassbanticker5
 antimassbanid5
-factionbonus
 factionbonusticker
 playersonline
+factionbonus
 g_fire_place_instance_no
 g_fish_school_instance_no
 g_herd_animal_spawn_instance_no
