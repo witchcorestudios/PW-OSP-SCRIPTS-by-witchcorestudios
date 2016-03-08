@@ -3,6 +3,8 @@ $config = parse_ini_file('db.ini');
 
 
 // Create connection
+
+$unique_id = $_GET["uniqueid"];
 $conn = mysqli_connect($config['server'],$config['username'],$config['password'],$config['dbname']);
 // Check connection
 if ($conn->connect_error) {
